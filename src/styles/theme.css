@@ -1,0 +1,37 @@
+:root[data-bs-theme=light] {
+  --flashback-card-bg: rgba(var(--bs-primary-rgb), 0.1);
+  --flashback-icon-color: var(--bs-primary);
+  --footer-bg: #f8f9fa;
+  --footer-text: #212529;
+}
+
+:root[data-bs-theme=dark] {
+  --flashback-card-bg: rgba(var(--bs-primary-rgb), 0.2);
+  --flashback-icon-color: var(--bs-light);
+  --footer-bg: #212529;
+  --footer-text: #f8f9fa;
+}
+
+:root[data-bs-theme=system] {
+  /* Fallbacks can be defined here if needed */
+}
+
+.flashback-card {
+  background-color: var(--flashback-card-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+.flashback-icon {
+  color: var(--flashback-icon-color) !important;
+  transition: color 0.3s ease;
+}
+
+footer {
+  background-color: var(--footer-bg) !important;
+  color: var(--footer-text) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 
